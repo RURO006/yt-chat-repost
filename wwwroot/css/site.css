@@ -1,0 +1,30 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 莫名其妙的怪東西，隱藏吧 */
+#menu.style-scope.yt-live-chat-paid-message-renderer {
+    display: none;
+}
+
+#yt-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ticker-renderer 不換行+隱藏 */
+#items.style-scope.yt-live-chat-ticker-renderer {
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* item-list-renderer 不換行+隱藏 */
+#items.style-scope.yt-live-chat-item-list-renderer {
+    flex: 1;
+    overflow: auto;
+}
